@@ -1,0 +1,596 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(./fuentes/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Medium';
+    src: url(./fuentes/static/Montserrat-Medium.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+nav{
+    background: #50535A;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+}
+.logo{
+    display: flex;
+    text-align: center;
+    font-family: 'Medium';
+    color: #FCA311;
+    font-size: 25px;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.6);
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    font-family: 'Regular';
+    color: #E5E5E5;
+    font-size: 14px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.btn-nav{
+    border: solid #E5E5E5 1px;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+li a.active, nav ul li a:hover{
+    background: #FCA311;
+    color: #000;
+    transition: all .5s;
+    border-radius: 3px;
+    border: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #E5E5E5;
+    padding: 20px 0px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./imagenes/weights-exercise-weightlifter-strong-athletic.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.encabezado{
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 70%;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.64);
+}
+.encabezado h1{
+    color: #E5E5E5;
+    font-family: 'Regular';
+    padding-top: 100px;
+}
+.encabezado span{
+    color: #FCA311;
+    font-size: 60px;
+}
+.div-btn-encabezado {
+    height: 30%;
+    text-align: center;
+
+}
+.btn-encabezado {
+    font-family: 'Medium';
+    color: #FCA311;
+    font-size: 15px;
+    background: rgba(0,0,0,0.7);
+    padding: 11px 45px;
+    text-transform: uppercase;
+    border: solid #FCA311 2px;
+    border-radius: 10px;
+}
+.btn-encabezado:hover {
+    background: #50535A;
+    transition: all .5s;
+    border: none
+}
+section[id] {
+    scroll-margin-top: 80px;
+}
+.nosotros{
+    background-color: #50535A;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.img-nosotros{
+    display: flex;
+    width: 35vw;
+    height: auto;
+    justify-content:center;
+    align-items:flex-end;
+}
+.img-mancuernas{
+    height: 290px;
+    width: 350px;
+    border-radius: 8px;
+    border: #FCA311 solid 2px;
+    box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+}
+.text-nosotros{
+    display: flex;
+    display: block;
+    width: 55vw;
+    font-family: 'Regular';
+    color: #E5E5E5;
+}
+.text-nosotros h2{
+    font-size: 35px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #FCA311;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+.text-nosotros p {
+    font-size: 15px;
+    padding: 0 40px 80px 0;
+}
+.actividades{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-color: #50535A;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.actividades h2{
+    font-size: 25px;
+    font-family: 'Regular';
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FCA311;
+    padding: 50px 0;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+
+}
+.div-actividades{
+    display: flex;
+    display: block;
+    width: 25%;
+    height: 80vh;
+    text-align: center;
+    border: #FCA311 solid 1px;
+    background: #2d3133;
+    box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -2px rgba(0,0,0,0.75);
+}
+.foto-actividades{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-bottom: solid #FCA311 1px;
+}
+.div-actividades h3{
+    color: #FCA311;
+    font-family: 'Regular';
+    padding: 15px 0;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+.div-actividades p{
+    font-family: 'Regular';
+    color: #E5E5E5;
+    font-size: 14px;
+}
+.form{
+    display: flex;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url(./imagenes/black-textured-brick-wall-background.jpg);
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: rgba(0,0,0,0.6);
+    height: auto;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+.form-container h2 {
+    font-size: 25px;
+    font-family: 'Regular';
+    text-align: center;
+    text-transform: uppercase;
+    color: #FCA311;
+    padding-top: 30px ;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+.form-input, .form-btn {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    font-family: 'Medium';
+    font-size: 14px;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+#input-message {
+    height: 150px;
+    resize: none;
+    font-family: 'Medium';
+    padding: 5px;
+}
+.form-btn{
+    background: #FCA311;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.form-btn:hover {
+    background: #717379;
+    transition: .4s;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #1E1F23;
+    height: 20vh;
+    width: 100%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-family: 'Regular';
+    font-size: 16px;
+    color: #E5E5E5;
+    margin: auto;
+}
+footer .logo {
+    font-size: 20px;
+}
+.footer-p {
+    padding-left: 50px;
+}
+footer a{
+    font-size: 25px;
+    color: #E5E5E5;
+    padding: 0 10px;
+}
+.div-firma{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.firma{
+    color: #E5E5E5;
+    font-family: 'Regular';
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+.body-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imagenes/black-textured-brick-wall-background.jpg);
+    align-items: center;
+}
+.logo-registro-login{
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+    margin: auto auto 35px;
+}
+#logo-gym {
+    font-size: 30px;
+}
+.form-registro {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    margin: 40px auto auto;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 0;
+}
+.form-registro h2{
+    font-size: 25px;
+    font-family: 'Regular';
+    text-align: center;
+    color: #FCA311;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+.icon{
+    color: #E5E5E5;
+    font-size: 25px;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    font-family: 'Medium';
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.input-container input{
+    font-size: 16px;
+    padding: 8px;
+    width: 90%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.btn-registrate{
+    font-size: 16px;
+    padding: 8px;
+    width: 80%;
+    margin: auto;
+    transition: 0.4s;
+    border-radius: 10px;
+    background: #FCA311;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.btn-registrate:hover {
+    background: #717379;
+}
+
+@media (max-width: 992px){
+    .logo{
+        font-size: 23px;
+    }
+    nav ul li a{
+        padding: 10px;
+        
+    }
+    .encabezado h1{
+        padding-top: 80px;
+    }
+    .encabezado span{
+        font-size: 55px;
+    }
+    .img-nosotros {
+        align-items: center;
+    }
+    .img-mancuernas{
+        height: auto;
+        width: 100%;
+    }
+    .text-nosotros h2{
+        font-size: 28px;
+        padding: 60px 0 30px;
+    }
+    .text-nosotros p {
+        font-size: 14px;
+        padding: 0 30px 30px 0;
+    }
+    .actividades{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .div-actividades{
+        width: 70%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 8px;
+    }
+    .foto-actividades{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: auto;
+    }
+    .div-actividades h3{
+        font-size: 20px;
+    }
+    .div-actividades p{
+        margin: 0 15px 20px;
+        font-size: 15px;
+    }
+    .form {
+        height: auto;
+    }
+    .form{
+        height: calc(100vh - 80px);
+        padding: 10px 0;
+    }
+    .form-container{
+        height: auto;
+        gap: 15px;
+    }
+    .form-container h2{
+        font-size: 20px;
+    }
+    .footer-p{
+        padding: 0;
+    }
+    .firma{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #50535A;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        margin: auto;
+        width: 100%;
+    }
+    nav ul li a{
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+    .btn-nav {
+        border: none;
+        color: #FCA311;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .encabezado h1{
+        font-size: 35px;
+    }
+    .encabezado span{
+        font-size: 40px;
+    }
+    .div-btn-encabezado{
+        height: 30%;
+    }
+    .btn-encabezado{
+        margin: auto;
+        padding: 8px 35px;
+        font-size: 14px;
+    }
+    .nosotros{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .img-nosotros{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .img-mancuernas{
+        width: 250px;
+        height: 185px;
+    }
+    .text-nosotros{
+        width: 100%;
+        height: 60%;
+    }
+    .text-nosotros h2{
+        font-size: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .text-nosotros p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .actividades{
+        align-items: center;
+        height: auto;
+    }
+    .actividades h2{
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    .div-actividades{
+        width: 90%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .form{
+        padding: 10px;
+    }
+    .form-container{
+        gap: 10px;
+    }
+    .form-container h2{
+        font-size: 20px;
+    }
+    footer{
+        height: auto;
+    }
+    .footer-container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .logo {
+        font-size: 18px;
+        padding: 8px 0;
+        justify-content: center;
+    }
+    .footer-p{
+        font-size: 14px;
+    }
+    footer a{
+        padding: 0 5px;
+    }
+    .firma{
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    .input-container input{
+        font-size: 14px;
+        padding: 8px;
+    }
+    .btn-registrate{
+        font-size: 14px;
+        margin: 20px auto;
+    }
+    .logo-registro-login {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #logo-gym {
+        font-size: 25px;
+    }
+}
