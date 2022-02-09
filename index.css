@@ -47,20 +47,12 @@ nav ul li a{
     font-family: 'Regular';
     color: #E5E5E5;
     font-size: 14px;
-    padding: 15px;
+    padding: 15px 20px;
     text-transform: uppercase;
 }
-.btn-nav{
-    border: solid #E5E5E5 1px;
-    margin: 0px 5px;
-    border-radius: 5px;
-}
 li a.active, nav ul li a:hover{
-    background: #FCA311;
-    color: #000;
-    transition: all .5s;
-    border-radius: 3px;
-    border: none;
+    color: #FCA311;
+    transition: all .4s;
 }
 .checkbtn{
     font-size: 30px;
@@ -105,18 +97,18 @@ header{
 }
 .btn-encabezado {
     font-family: 'Medium';
-    color: #FCA311;
     font-size: 15px;
-    background: rgba(0,0,0,0.7);
-    padding: 11px 45px;
+    color: #000;
+    background: #FCA311;
+    padding: 12px 45px;
     text-transform: uppercase;
-    border: solid #FCA311 2px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .btn-encabezado:hover {
-    background: #50535A;
+    background: rgba(0,0,0,0.7);
+    color: #FCA311;
     transition: all .5s;
-    border: none
+    border: solid #FCA311 2px;
 }
 section[id] {
     scroll-margin-top: 80px;
@@ -212,9 +204,13 @@ section[id] {
     color: #E5E5E5;
     font-size: 14px;
 }
+#contacto{
+    height: auto;
+}
 .form{
     display: flex;
-    height: calc(100vh - 80px);
+    height: auto;
+    /* height: calc(100vh - 80px); */
     width: 100%;
     background-image: url(./imagenes/black-textured-brick-wall-background.jpg);
     justify-content: center;
@@ -229,6 +225,7 @@ section[id] {
     width: 90%;
     max-width: 450px;
     border-radius: 10px;
+    margin: auto;
 }
 .form-container h2 {
     font-size: 25px;
@@ -388,7 +385,7 @@ footer a{
 
 @media (max-width: 992px){
     .logo{
-        font-size: 23px;
+        font-size: 25px;
     }
     nav ul li a{
         padding: 10px;
@@ -462,29 +459,30 @@ footer a{
 @media (max-width: 767px){
     .checkbtn{
         display: block;
+        font-size: 32px;
+    }
+    .logo{
+        font-size: 25px;
+        
     }
     nav ul{
         flex-direction: column;
         position: fixed;
         width: 100%;
         height: auto;
-        background: #50535A;
+        background: #1E1F23;
         top: 80px;
         left: -100%;
         transition: all .5s;
     }
     nav ul li{
-        margin: auto;
         width: 100%;
     }
     nav ul li a{
+        font-size: 15px;
         width: 100%;
         text-align: center;
-        padding: 14px;
-    }
-    .btn-nav {
-        border: none;
-        color: #FCA311;
+        padding: 20px;
     }
     #check:checked ~ ul {
         left: 0;
@@ -497,11 +495,6 @@ footer a{
     }
     .div-btn-encabezado{
         height: 30%;
-    }
-    .btn-encabezado{
-        margin: auto;
-        padding: 8px 35px;
-        font-size: 14px;
     }
     .nosotros{
         display: flex;
@@ -546,9 +539,9 @@ footer a{
         margin-bottom: 20px;
         border-radius: 5px;
     }
-    .form{
+    /* .form{
         padding: 10px;
-    }
+    } */
     .form-container{
         gap: 10px;
     }
