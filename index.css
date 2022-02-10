@@ -77,7 +77,7 @@ header{
     margin: auto;
     height: auto;
     width: 70%;
-    font-size: 25px;
+    font-size: 35px;
     text-transform: uppercase;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.64);
 }
@@ -126,6 +126,7 @@ section[id] {
     height: auto;
     justify-content:center;
     align-items:flex-end;
+    padding-top: 100px;
 }
 .img-mancuernas{
     height: 290px;
@@ -142,6 +143,7 @@ section[id] {
     width: 55vw;
     font-family: 'Regular';
     color: #E5E5E5;
+    padding-top: 100px;
 }
 .text-nosotros h2{
     font-size: 35px;
@@ -162,7 +164,7 @@ section[id] {
     height: auto;
     background-color: #50535A;
     flex-wrap: wrap;
-    padding-bottom: 10px;
+    padding: 100px 0 170px;
 }
 .actividades h2{
     font-size: 25px;
@@ -171,7 +173,7 @@ section[id] {
     text-align: center;
     text-transform: uppercase;
     color: #FCA311;
-    padding: 50px 0;
+    padding: 70px 0 120px;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.6);
 
 }
@@ -209,8 +211,7 @@ section[id] {
 }
 .form{
     display: flex;
-    height: auto;
-    /* height: calc(100vh - 80px); */
+    height: calc(100vh - 80px);
     width: 100%;
     background-image: url(./imagenes/black-textured-brick-wall-background.jpg);
     justify-content: center;
@@ -505,7 +506,7 @@ footer a{
     .img-nosotros{
         width: 100%;
         height: auto;
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
     .img-mancuernas{
         width: 250px;
@@ -514,6 +515,7 @@ footer a{
     .text-nosotros{
         width: 100%;
         height: 60%;
+        padding: 70px 0;
     }
     .text-nosotros h2{
         font-size: 20px;
@@ -529,14 +531,15 @@ footer a{
     .actividades{
         align-items: center;
         height: auto;
+        padding: 0 0 80px;
     }
     .actividades h2{
         font-size: 20px;
-        padding: 30px 0;
+        padding: 70px 0;
     }
     .div-actividades{
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
         border-radius: 5px;
     }
     /* .form{
